@@ -11,7 +11,6 @@ def minEatingSpeed(self, piles: List[int], h: int) -> int:
         if h < time:
             low = mid + 1
         else:
-            high = mid - 1
-            speed = mid
+            speed, high = mid, mid - 1
 
     return speed
