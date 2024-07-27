@@ -3,6 +3,7 @@ def search(self, nums: List[int], target: int) -> int:
 
     while l <= r:
         idx = (l + r) // 2
+        
         if target < nums[idx]:
             r = idx - 1
         elif nums[idx] < target:
